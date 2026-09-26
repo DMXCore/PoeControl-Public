@@ -2,7 +2,8 @@
 
 Downloads and issues for the **DMX Core PoE Control**: a PoE-powered wall
 knob with push buttons that controls a DMX Core 100, a Symetrix DSP, a
-Q-SYS Core, or any OSC server. Source stays private.
+Q-SYS Core, or any OSC server, or is a surface in Bitfocus Companion.
+Source stays private.
 
 - Releases: https://github.com/DMXCore/PoeControl-Public/releases
 - Issues: https://github.com/DMXCore/PoeControl-Public/issues
@@ -19,6 +20,7 @@ talks to, and the board it is built on.
 | `osc` | A DMX Core 100, or any OSC server | OSC over UDP, found by mDNS |
 | `symetrix` | A Symetrix DSP | its control protocol over TCP |
 | `qsys` | A Q-SYS Core | the External Control Protocol over TCP |
+| `companion` | Bitfocus Companion | the Satellite protocol over TCP: the device is a surface, its knobs and buttons are keys, and Companion decides what they do |
 
 | Board | Hardware |
 |---|---|
@@ -81,8 +83,8 @@ Open an issue here. Please include:
 
 - the `firmware` and `started` lines from `status.txt` or the page's
   status, which name the image, the board and how the device last started;
-- what the knob talks to (DMX Core 100, Symetrix, Q-SYS, other) and, for
-  a DSP, its model;
+- what the knob talks to (DMX Core 100, Symetrix, Q-SYS, Companion, other)
+  and, for a DSP, its model;
 - what you did, what you expected, and what happened - a copy of
   `status.txt` and of `config.txt` with any addresses you want kept private
   removed helps most, and the page's log if the device is on the network.
